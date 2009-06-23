@@ -1,0 +1,20 @@
+/* Layout-Independent Adjustments
+@import yaml/core/iehacks.sass
+
+
+@media screen, projection
+  
+  /*
+    min-width/max-width workaround for IE5.x & IE6
+  
+    @workaround
+    @affected   IE 5.x/Win, IE6
+    @css-for    IE 5.x/Win, IE6
+    @valid      no
+  
+  * html div#page_margins
+    /* Fallback if JavaScript is disabled
+    :width 80em
+    
+    /* JS-Expression for min-/max-width simulation
+    :width expression((document.documentElement && document.documentElement.clientHeight) ? ((document.documentElement.clientWidth < !min_pixels) ? ! : ((document.documentElement.clientWidth > (90 * 16 * (parseInt(this.parentNode.currentStyle.fontSize) / 100))) ? "90em" : "auto" )) : ((document.body.clientWidth < 740) ? "740px" : ((document.body.clientWidth > (90 * 16 * (parseInt(this.parentNode.currentStyle.fontSize) / 100))) ? "90em" : "auto" )))

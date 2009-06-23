@@ -1,17 +1,17 @@
 require 'fileutils'
 require 'sass'
-require 'lib/ninesixty/sass_extensions'
+#require 'lib/yaml/sass_extensions'   # TODO Needed?
 
 begin
   require 'echoe'
  
-  Echoe.new('compass-960-plugin', open('VERSION').read) do |p|
-    # p.rubyforge_name = '960'
-    p.summary = "Compass compatible Sass port of 960.gs."
-    p.description = "The 960 Grid System is an effort to streamline web development workflow by providing commonly used dimensions, based on a width of 960 pixels. http://960.gs/"
-    p.url = "http://github.com/chriseppstein/compass-960-plugin"
-    p.author = ['Chris Eppstein']
-    p.email = "chris@eppsteins.net"
+  Echoe.new('compass-yaml-plugin', open('VERSION').read) do |p|
+    # p.rubyforge_name = 'YAML'
+    p.summary = "Compass compatible Sass port of the YAML CSS framework."
+    p.description = %q{"Yet Another Multicolumn Layout" (YAML) is an (X)HTML/CSS framework for creating modern and flexible floated layouts. The structure is extremely versatile in its programming and absolutely accessible for end users. http://www.yaml.de/en/home.html}
+    p.url = "http://github.com/djmaze/compass-yaml-plugin"
+    p.author = ['Chris Eppstein', 'Martin Honermeyer']
+    p.email = %q{chris@eppsteins.net maze@strahlungsfrei.de}
     p.dependencies = ["chriseppstein-compass"]
     p.has_rdoc = false
   end

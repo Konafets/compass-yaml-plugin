@@ -1,56 +1,25 @@
-960 Grid System - Compass Plugin
+YAML CSS framework - Compass Plugin
 ================================
 
-* Port of Version 1.0
-* 2008-03-24
+* Port of Version 3.1
+* 2009-06-23
 
-Created by Nathan Smith. See the official site for more info: <http://960.gs/>
+Created by Martin Honermeyer. See the official site for more info: <http://www.yaml.de/en/home.html>
 
 ---------
 
-This plugin adds the 960 Grid System framework to [Compass](http://compass-style.org/).
+This plugin adds the YAML CSS framework to [Compass](http://compass-style.org/).
 
 Install
 =======
 
     sudo gem install chriseppstein-compass
-    sudo gem install chriseppstein-compass-960-plugin
+    sudo gem install djmaze-compass-yaml-plugin
 
-Create a 960-based Compass Project
+Create a YAML-based Compass Project
 ==================================
 
-    compass -r ninesixty -f 960 <project name>
+    compass -r yaml-css -f yaml <project name>
 
-Then edit your `grid.sass` and `text.sass` files accordingly. A reset is added into grid.sass automatically.
-
-Customizing your Grid System
-============================
-
-To create a grid system with other number of columns use the `+grid-system` mixin to generate
-the corresponding classes.
-
-Example:
-
-    #wrap
-      +grid-system(24)
-
-Making Semantic Grids
-=====================
-
-* Use the `+grid-container` mixin to declare your container element.
-* Use the `+grid` mixin to declare a grid element.
-* Use the `+alpha` and `+omega` mixins to declare the first and last grid elements for a row.
-* User the `+grid-prefix` and `+grid-suffix` mixins to add grid columns before or after a grid element.
-
-Example:
-
-    #wrap
-      +grid-container
-      #left-nav
-        +alpha
-        +grid(5,16)
-      #main-content
-        +grid-prefix(1,16)
-        +grid(10, 16)
-        +omega
+Then edit your `base.sass` and `patch_my_layout.sass` files accordingly.
 
