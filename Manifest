@@ -6,7 +6,9 @@ Rakefile
 README.mkdn
 sass/yaml/core/_base.sass
 sass/yaml/core/_iehacks.sass
+sass/yaml/core/_print_base.sass
 templates/project/base.sass
 templates/project/manifest.rb
 templates/project/patch_my_layout.sass
+templates/project/print_draft.sass
 VERSION

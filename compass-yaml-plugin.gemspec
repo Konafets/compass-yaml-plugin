@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = %q{"Yet Another Multicolumn Layout" (YAML) is an (X)HTML/CSS framework for creating modern and flexible floated layouts. The structure is extremely versatile in its programming and absolutely accessible for end users. http://www.yaml.de/en/home.html}
   s.email = %q{chris@eppsteins.net maze@strahlungsfrei.de}
   s.extra_rdoc_files = ["lib/yaml/compass_plugin.rb", "lib/yaml/sass_extensions.rb", "lib/yaml-css.rb", "README.mkdn"]
-  s.files = ["lib/yaml/compass_plugin.rb", "lib/yaml/sass_extensions.rb", "lib/yaml-css.rb", "Manifest", "Rakefile", "README.mkdn", "sass/yaml/core/_base.sass", "sass/yaml/core/_iehacks.sass", "templates/project/base.sass", "templates/project/manifest.rb", "templates/project/patch_my_layout.sass", "VERSION", "compass-yaml-plugin.gemspec"]
+  s.files = ["lib/yaml/compass_plugin.rb", "lib/yaml/sass_extensions.rb", "lib/yaml-css.rb", "Manifest", "Rakefile", "README.mkdn", "sass/yaml/core/_base.sass", "sass/yaml/core/_iehacks.sass", "sass/yaml/core/_print_base.sass", "templates/project/base.sass", "templates/project/manifest.rb", "templates/project/patch_my_layout.sass", "templates/project/print_draft.sass", "VERSION", "compass-yaml-plugin.gemspec"]
   s.homepage = %q{http://github.com/djmaze/compass-yaml-plugin}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Compass-YAML-plugin", "--main", "README.mkdn"]
   s.require_paths = ["lib"]
