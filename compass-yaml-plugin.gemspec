@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{compass-yaml-plugin}
-  s.version = "0.9.6"
+  s.version = "0.9.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Chris Eppstein", "Martin Honermeyer"]
